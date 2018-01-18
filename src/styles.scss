@@ -1,0 +1,296 @@
+@import "assets/style/var";
+//Font
+@font-face {
+  font-family: Vazir;
+  src: url('assets/fonts/Vazir.eot');
+  src: url('assets/fonts/Vazir.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Vazir.woff') format('woff'), url('assets/fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('assets/fonts/Vazir-Bold.eot');
+  src: url('assets/fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Vazir-Bold.woff') format('woff'), url('assets/fonts/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('assets/fonts/Vazir-Light.eot');
+  src: url('assets/fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Vazir-Light.woff') format('woff'), url('assets/fonts/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+//Public
+body {
+  font-family: 'Vazir' !important;
+  background-color: $default-background-color;
+}
+button, input, select, textarea{
+  font-family: 'Vazir' !important;
+}
+a {
+  text-decoration: none !important;
+}
+i {
+  vertical-align: middle;
+}
+
+
+//Bootstrap Custom Grid
+.col-inline-5 {
+  max-width: 20%;
+  -webkit-box-flex: 0;
+  flex: 0 0 20%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 768px) {
+  .col-inline-5 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+  }
+}
+
+
+//Add Button
+.add-button {
+  background-color: $add-button-bg-color !important;
+  color: $add-button-color !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+//Add Icon
+.add-icon {
+  cursor: pointer;
+  color: $add-icon-color;
+  font-size: 25px !important;
+}
+//Remove Icon
+.remove-icon {
+  cursor: pointer;
+  font-size: 25px !important;
+}
+//Remove Button
+.remove-button {
+  background-color: $remove-button-bg-color !important;
+  color: $remove-button-color !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+//Submit Button
+.submit-button {
+  background-color: $submit-button-bg-color !important;
+  color: $submit-button-color !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+//select.form-control:not([size]):not([multiple]) {
+//  padding: .25rem .75rem !important;
+//}
+
+
+
+
+// RTL Bootstrap
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 2px !important;
+  border-top-right-radius: 2px !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+.btn-group>.btn:last-child:not(:first-child),
+.btn-group>.dropdown-toggle:not(:first-child) {
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 2px !important;
+  border-top-left-radius: 2px !important;
+}
+.nav.nav-tabs {
+  padding-right: 0 !important;
+  padding-left: auto !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-right: transparent !important;
+  border-left: transparent !important;
+  border-top: transparent !important;
+}
+.dropdown-menu {
+  right: 20px !important;
+  left: initial !important;
+  text-align: right !important;
+}
+.list-unstyled {
+  padding-right: 0 !important;
+  padding-left: initial !important;
+}
+.card {
+  direction: rtl !important;
+  .card-header {
+    text-align: right !important;
+  }
+  .card-block {
+    text-align: right !important;
+  }
+}
+.table {
+  th {
+    text-align: right;
+  }
+}
+input {
+  text-align: right !important;
+}
+label {
+  span {
+    margin-right: 1.5rem;
+  }
+}
+button {
+  cursor: pointer;
+}
+.custom-control {
+  margin-right: 0 !important;
+}
+.custom-control-indicator {
+  right: 0 !important;
+  left: auto !important;
+}
+.custom-radio .custom-control-indicator {
+  margin-right: 0 !important;
+}
+.custom-file-control {
+  margin-right: 0 !important;
+}
+.custom-file-control::before {
+  right: auto !important;
+  left: -1px !important;
+  border-radius: .25rem 0 0 .25rem !important;
+  right: auto !important;
+  left: -1px !important;
+  border-radius: .25rem 0 0 .25rem !important;
+}
+.form-check-label {
+  padding-right: 1.25rem;
+}
+.form-check-input {
+  margin-right: -1.25rem;
+  margin-left: 0;
+}
+.form-check{
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+.form-check-input:only-child{
+  position: absolute;
+}
+.form-control-danger, .form-control-success, .form-control-warning {
+  padding-left: 2.25rem;
+  padding-right: .75rem;
+  background-position: center left .5625rem;
+}
+.has-success .form-control-feedback,.has-danger .form-control-feedback,.has-warning .form-control-feedback{
+  font-size: $default-font-size;
+}
+
+
+//Table Icon Size
+.table {
+  ul {
+    i {
+      cursor: pointer;
+      font-size: 22px !important;
+    }
+  }
+  td {
+    img {
+      max-height: 150px !important;
+    }
+  }
+}
+
+
+//Tooltip
+.tooltip {
+  font-family: 'Vazir' !important;
+}
+.tooltip-inner {
+  border-radius: 2px;
+}
+
+//ngBootstrap Rtl
+.pagination {
+  direction: ltr;
+  justify-content: center;
+  padding-right: 0;
+}
+.alert-dismissible .close{
+  float: left;
+  left: -1.25rem;
+  right: auto;
+  outline: none;
+}
+
+
+//Quill Editor RTL Style
+.ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg{
+  left: 0;
+  right:auto;
+}
+.ql-toolbar.ql-snow {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.ql-container{
+  border-bottom-left-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
+}
+.ql-editor{
+  text-align: right !important;
+  font-family: $base-font-family;
+}
+.ql-toolbar.ql-snow .ql-formats{
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+//Sweet Alert
+.swal-confirm-button{
+  margin-right: 10px !important;
+}
+.swal2-title{
+  font-family: $base-font-family;
+  font-size: $medium-font-size !important;
+}
+
+//Perfect Slider
+perfect-scrollbar>.ps.ps--active-y>.ps__rail-y{
+  right: auto !important;
+  left: 0 !important;
+}
+perfect-scrollbar>.ps.ps--scrolling-y>.ps__rail-y{
+  background-color: transparent !important;
+}
+.ps__rail-x:focus, .ps__rail-x:hover, .ps__rail-y:focus, .ps__rail-y:hover{
+  background-color: transparent !important;
+}
+.ps__thumb-y {
+  background-color: #11161e !important;
+  right:auto !important;
+}
+perfect-scrollbar>.ps.ps--active-y>.ps__rail-y:hover{
+  width: 10px !important;
+}
+.ps__rail-y:focus>.ps__thumb-y, .ps__rail-y:hover>.ps__thumb-y {
+  width: 6px !important;
+}
+
+
+//Admin Dashboard Main Part Card Header
+.admin-main-card-header{
+  background: transparent !important;
+}

@@ -1,0 +1,85 @@
+@import "../../../assets/style/var";
+
+.navbar {
+    flex-direction: row-reverse;
+    flex-flow: row-reverse;
+    background-color: $default-color;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    transition-duration: .3s;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+a {
+    color: $light-color;
+}
+.navbar-profile-btn {
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: $light-color;
+    direction: rtl;
+    cursor: pointer;
+&:focus {
+     box-shadow: none;
+ }
+span:last-child {
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 2rem;
+}
+span:first-child {
+i {
+    vertical-align: middle;
+}
+}
+img {
+    width: 35px;
+}
+}
+.dropdown-toggle::after {
+    vertical-align: 0 !important;
+}
+.dropdown-item {
+    text-align: right;
+    color: $dark-color;
+&:active {
+     background-color: transparent;
+ }
+}
+}
+
+.main{
+    width: 100%;
+    z-index: 0;
+    .main-intro{
+        margin-right: 250px;
+        margin-top: 70px;
+        .card{
+            min-height: 75vh !important;
+        }
+    }
+}
+.sidebar{
+    z-index: 1;
+    position: fixed;
+}
+@media (max-width: 575px) {
+    .navbar .navbar-profile-btn span {
+        line-height: initial;
+    }
+}
+@media (min-width: 768px){
+    .main {
+        min-height: 100vh;
+    }
+}
+@media(max-width: 991px) {
+    .sidebar {
+        //width: 50px;
+    }
+    .main .main-intro{
+        margin-right: 0;
+        //margin-right: 50px;
+    }
+}

@@ -1,0 +1,46 @@
+<div id="sidebar-overlay"></div>
+<div class="mbdash">
+    <a class="mbdash-brand" [routerLink]="['home']">داشبورد</a>
+    <div class="sidebar-display d-inline-block d-lg-none">
+        <input id="sm-sidebar" type="checkbox" name="tabs">
+        <label for="sm-sidebar" class="mb-0 ml-3">
+            <span><i class="fa fa-bars pl-1"></i></span>
+        </label>
+    </div>
+</div>
+<perfect-scrollbar class="sidebar-perfect-scrollbar" [config]="config">
+    <div id="sidebar-list">
+        <!-- Tab1 -->
+        <div class="tab">
+            <input id="tab-one" class="sidebar-tab" type="checkbox" name="tabs">
+            <label for="tab-one" class="mb-0 pr-3">
+                <span><i class="fa fa-tags pl-1"></i></span>
+                <span class="d-lg-inline-block ">مدیریت دسته بندی ها</span>
+            </label>
+            <div class="tab-content">
+                <ul class="list-unstyled mb-0">
+                    <li><a routerLink="{{adminRouter.ADMIN_CATEGORIES_CREATION_ROUTE}}" routerLinkActive="sidebar-active-item" class="sm-sidebar-state">ایجاد دسته بندی جدید</a></li>
+                    <li><a routerLink="{{adminRouter.ADMIN_CATEGORIES_LIST_ROUTE}}" routerLinkActive="sidebar-active-item" class="sm-sidebar-state">مشاهده دسته بندی ها</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/ Tab1 -->
+        <!-- Tab2 -->
+        <div class="tab">
+            <input id="tab-two" class="sidebar-tab" type="checkbox" name="tabs">
+            <label for="tab-two" class="mb-0 pr-3">
+                <span><i class="fa fa-users pl-1"></i></span>
+                <span class="d-lg-inline-block ">مدیریت کاربران</span>
+            </label>
+            <div class="tab-content">
+                <ul class="list-unstyled mb-0">
+                    <li><a routerLink="{{adminRouter.ADMIN_CATEGORIES_CREATION_ROUTE}}" routerLinkActive="sidebar-active-item" class="sm-sidebar-state">ایجاد کابر جدید</a></li>
+                    <li><a routerLink="{{adminRouter.ADMIN_CATEGORIES_LIST_ROUTE}}" routerLinkActive="sidebar-active-item" class="sm-sidebar-state">مشاهده کاربران</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/ Tab2 -->
+    </div>
+</perfect-scrollbar>
+
+

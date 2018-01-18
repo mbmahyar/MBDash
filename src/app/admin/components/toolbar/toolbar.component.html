@@ -1,0 +1,25 @@
+<nav class="navbar navbar-toggleable-md">
+    <div class="navbar-intro mr-auto">
+        <div class="row">
+            <div class="col">
+                <div class="navbar-notification float-right d-none d-sm-inline-block">
+                    <a><i class="fa fa-bell-o"></i><span>9</span></a>
+                    <a><i class="fa fa-user-o"></i><span>+10</span></a>
+                </div>
+                <!-- Dropdown -->
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn navbar-profile-btn px-0" id="dropdownBasic1" ngbDropdownToggle>
+                        <span class="navbar-profile-avatar float-right"
+                              style="background-image: url('./assets/images/user.jpg')"></span>
+                        <span class="d-none d-md-inline-block">نام مدیر سایت</span>
+                    </button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="navbar-dropdown-menu">
+                        <a href="#" class="dropdown-item">ویرایش پروفایل</a>
+                        <a href="#" class="dropdown-item">خروج</a>
+                    </div>
+                </div>
+                <!--/ Dropdown -->
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,117 @@
+<div class="table-responsive mb-lg-1 mb-3">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th style="width: 150px !important; min-width: 150px">تصویر</th>
+      <th style="min-width: 150px">عنوان</th>
+      <th style="min-width: 150px">رنگ</th>
+      <th style="min-width: 150px">تاریخ</th>
+      <th style="width: 150px !important; min-width: 150px">عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+      <!--1-->
+      <tr>
+        <th class="align-middle" scope="row">1</th>
+        <td class="align-middle no-gutters">
+          <img src="assets/images/cat.jpg" class="border img-fluid" alt="">
+        </td>
+        <td class="align-middle">گربه</td>
+        <td class="align-middle">
+            <span>آبی</span>
+        </td>
+        <td class="align-middle">
+            <span>1397.1.1</span>
+        </td>
+        <td class="align-middle">
+          <ul class="list-inline mb-0 pr-0">
+            <li class="list-inline-item">
+              <a routerLink="#" placement="top" ngbTooltip="ویرایش">
+                <i class="fa fa-pencil pl-lg-1 pl-sm-0"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a placement="top" ngbTooltip="مدیریت اسلایدر">
+                <i class="fa fa-plus text-success pl-lg-1 pl-sm-0"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a [swal]="deleteSwal" placement="top" ngbTooltip="حذف">
+                <i class="fa fa-trash text-danger"></i>
+              </a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <!--2-->
+      <tr>
+        <th class="align-middle" scope="row">2</th>
+        <td class="align-middle no-gutters">
+          <img src="assets/images/dog.jpg" class="border img-fluid" alt="">
+        </td>
+        <td class="align-middle">سگ</td>
+        <td class="align-middle">
+          <span>زرد</span>
+        </td>
+        <td class="align-middle">
+          <span>1397.1.4</span>
+        </td>
+        <td class="align-middle">
+          <ul class="list-inline mb-0 pr-0">
+            <li class="list-inline-item">
+              <a routerLink="#" placement="top" ngbTooltip="ویرایش">
+                <i class="fa fa-pencil pl-lg-1 pl-sm-0"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a placement="top" ngbTooltip="مدیریت اسلایدر">
+                <i class="fa fa-plus text-success pl-lg-1 pl-sm-0"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a [swal]="deleteSwal" placement="top" ngbTooltip="حذف">
+                <i class="fa fa-trash text-danger"></i>
+              </a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <!--3-->
+      <tr>
+        <th class="align-middle" scope="row">1</th>
+        <td class="align-middle no-gutters">
+          <img src="assets/images/cow.jpg" class="border img-fluid" alt="">
+        </td>
+        <td class="align-middle">گاو</td>
+        <td class="align-middle">
+          <span>قهوه ای</span>
+        </td>
+        <td class="align-middle">
+          <span>1397.1.1</span>
+        </td>
+        <td class="align-middle">
+          <ul class="list-inline mb-0 pr-0">
+            <li class="list-inline-item">
+              <a routerLink="#" placement="top" ngbTooltip="ویرایش">
+                <i class="fa fa-pencil pl-lg-1 pl-sm-0"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a placement="top" ngbTooltip="مدیریت اسلایدر">
+                <i class="fa fa-plus text-success pl-lg-1 pl-sm-0"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a [swal]="deleteSwal" placement="top" ngbTooltip="حذف">
+                <i class="fa fa-trash text-danger"></i>
+              </a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<swal #deleteSwal title="آیا از انجام این عملیات مطمئن هستید ؟" type="question" [showCancelButton]="true" [options]="{ confirmButtonText: 'بله', cancelButtonText: 'خیر',confirmButtonClass:'swal-confirm-button btn btn-primary',cancelButtonClass:'btn', focusConfirm: false }" (confirm)="deleteFile(1)"></swal>

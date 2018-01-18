@@ -1,0 +1,8 @@
+<div class="card-header admin-main-card-header">
+  <b>خوش آمدید</b>
+</div>
+<div class="card-block">
+  <p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
+  </p>
+</div>
