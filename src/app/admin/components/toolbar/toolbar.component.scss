@@ -74,6 +74,7 @@
     .dropdown-item {
         text-align: right;
         color: $dark-color;
+        font-size: $medium-font-size;
         &:active {
             background-color: transparent;
         }

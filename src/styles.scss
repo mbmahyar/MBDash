@@ -23,9 +23,11 @@
 body {
   font-family: 'Vazir' !important;
   background-color: $default-background-color;
+  font-size: $default-font-size;
 }
 button, input, select, textarea{
   font-family: 'Vazir' !important;
+  font-size: $default-font-size !important;
 }
 a {
   text-decoration: none !important;
@@ -268,6 +270,9 @@ button {
 }
 
 //Perfect Slider
+.sidebar-perfect-scrollbar{
+  float: right !important;
+}
 perfect-scrollbar>.ps.ps--active-y>.ps__rail-y{
   right: auto !important;
   left: 0 !important;
