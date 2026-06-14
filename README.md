@@ -1,7 +1,9 @@
 # MBDash
-Light Rtl Admin Dashboard With Angular 5 &amp; Bootstrap 4 (no jquery)
 
-<a target="_blank" href="https://mbmahyar.github.io/MBDash/dashboard"><img src="http://i63.tinypic.com/2cicugn.png"/></a>
+> 📦 **ARCHIVED** - This Angular 5 project is no longer maintained (EOL Nov 2018). Code is kept for historical reference. Fork freely, but no updates will be provided.
+
+
+Light Rtl Admin Dashboard With Angular 5 &amp; Bootstrap 4 (no jquery)
 
 ### What's included:
 
